@@ -9,7 +9,8 @@
     url = https://codeberg.org/soundtouch/soundtouch.git
 [submodule "catch"]
     path = externals/catch
-    url = https://github.com/catchorg/Catch2/tree/Catch1.x
+    url = https://github.com/catchorg/Catch2.git
+    branch = Catch1.x
 [submodule "dynarmic"]
     path = externals/dynarmic
     url = https://github.com/rtiangha/dynarmic.git
