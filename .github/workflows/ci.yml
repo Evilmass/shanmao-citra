@@ -91,11 +91,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
-      - name: Override broken submodule
-        run: |
-          git config submodule.externals/dynarmic.url https://github.com/MerryMage/dynarmic.git
-          git submodule sync
-          git submodule update --init --recursive --remote
       - name: Set up cache
         uses: actions/cache@v4
         with:

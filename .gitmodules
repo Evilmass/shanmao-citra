@@ -14,6 +14,7 @@
 [submodule "dynarmic"]
     path = externals/dynarmic
     url = https://github.com/yuzu-mirror/dynarmic.git
+    checkout = d333a09b3b9152af3cb442902ae8ea18d8416470
 [submodule "xbyak"]
     path = externals/xbyak
     url = https://github.com/herumi/xbyak.git
