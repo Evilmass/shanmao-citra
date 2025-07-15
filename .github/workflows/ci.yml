@@ -90,7 +90,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: recursive    # 默认会尝试 checkout 某个 SHA
+          fetch-depth: 0           # 拉取完整历史，防止 SHA 缺失
+      - name: Fix broken submodule reference
+        run: |
+          git submodule sync
+          git submodule update --init --recursive --remote
       - name: Set up cache
         uses: actions/cache@v4
         with:
